@@ -1,0 +1,165 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+      
+    {"@id": "#issue",
+        "@type": "PublicationIssue",
+        "issueNumber": "xx",
+        "datePublished": "xxxx",
+        "isPartOf": {
+            "@id": "#periodical",
+            "@type": [
+                "PublicationVolume",
+                "Periodical"
+            ],
+            "name": "Journal of Fluid Mechanics",
+            "issn": [
+                "0022-1120",
+                "1469-7645"
+            ],
+            "volumeNumber": "xx",
+            "publisher": "Cambridge University Press"
+        }
+    },
+    {"@id": "#publication",
+        "@type": "ScholarlyArticle",
+        "isPartOf": "#issue", 
+        "isBasedOn": "#preprint",
+        "name": "Impact of the numerical domain on turbulent flow statistics: scalings and considerations for canopy flows",
+        "description": "Large Eddy Simulations (LES) are widely used to study the effects of surface morphology on turbulence statistics, exchange processes, and turbulence topology in urban canopies. However, as LES are only approximations of reality, special attention is needed for the computational model setup to ensure an accurate representation of the physical processes of interest. This paper shows that the choice of the numerical domain can significantly impact the accuracy of turbulent flow statistics, potentially causing a mismatch between numerical studies and experimental data. The study examines the influence of cross-stream aspect ratio (YAR), streamwise aspect ratio (XAR), and scale separation (SS) on first and second-order flow statistics and turbulence topology. It is found that domains with a low YAR underestimate the velocity variance, while those with a low XAR overestimate the variance value. The study proposes a new approach based on the Buckingham Pi theorem to evaluate the effect of SS, as the existing method has major limitations for canopy flows. The results suggest that domains with small SS underpredict the variance value. To minimize the artificial impact of the numerical domain on turbulent flow statistics, the study recommends guidelines for future research, including a YAR of 3 or more, an XAR of 6 or more, and an SS of 12 or more. Error tables are presented to allow researchers to select smaller domains than recommended, depending on their research interests in specific parts of the flow",
+        "dateModified": "2023-07-14",
+        "author": [
+          {
+          "@type": "Person",
+          "givenName": "Atharva",
+          "familyName": "Sathe",
+          "affiliation": {
+              "@type": "Organization",
+              "name": "Department of Civil Engineering and Engineering Mechanics, Columbia University, New York, NY 10027"
+              }
+          },
+          {
+          "@type": "Person",
+          "@id": "http://orcid.org/0000-0001-9661-0599",
+          "givenName": "Marco",
+          "familyName": "Giometto",
+          "affiliation": {
+              "@type": "Organization",
+              "name": "Department of Civil Engineering and Engineering Mechanics, Columbia University, New York, NY 10027"
+              }
+        }
+        ],
+        "keywords": [
+          "cross-stream aspect ratio", 
+          "streamwise aspect ratio", 
+          "scale separation",
+          "Large Eddy Simulations",
+          "urban boundary layer"
+        ],
+        "url": "https://www.cambridge.org/core/journals/journal-of-fluid-mechanics/article/abs/TITLE-OF-PAPER",
+        "sameAs": "DOI",
+        "citation": "Sathe, A. & Giometto, M. PUBLICATION YEAR Impact of the numerical domain on turbulent flow statistics: scalings and considerations for canopy flows. PUBLISHER, ISSUE#, PAGES."
+    },
+    {"@id": "#presentation",
+        "@type": "PresentationDigitalDocument",
+        "about": "#publication",
+        "name": "Impact of the numerical domain on turbulent flow statistics: scalings and considerations for canopy flows",
+        "description": "Presentation about The impact of numberical domain on turbulent flow statistics.",
+        "datePublished": "YYYY-MM-DD",
+        "dateModified": "YYYY-MM-DD",
+        "author": [
+          {
+            "@type": "Person",
+            "givenName": "Atharva",
+            "familyName": "Sathe",
+            "affiliation": {
+                "@type": "Organization",
+                "name": "Department of Civil Engineering and Engineering Mechanics, Columbia University, New York, NY 10027"
+                }
+            },
+            {
+            "@type": "Person",
+            "@id": "http://orcid.org/0000-0001-9661-0599",
+            "givenName": "Marco",
+            "familyName": "Giometto",
+            "affiliation": {
+                "@type": "Organization",
+                "name": "Department of Civil Engineering and Engineering Mechanics, Columbia University, New York, NY 10027"
+                }
+          }
+        ],
+        "url": "URL of public presentation"
+    },
+    {"@id": "#preprint",
+      "@type": "ScholarlyArticle",
+      "name": "Impact of Numerical Domain on Turbulent Flow Statistics: Scalings and Considerations for Canopy Flows",
+      "datePublished": "2022-12-15",
+      "author": [
+        {
+          "@type": "Person",
+          "givenName": "Atharva",
+          "familyName": "Sathe",
+          "affiliation": {
+              "@type": "Organization",
+              "name": "Department of Civil Engineering and Engineering Mechanics, Columbia University, New York, NY 10027"
+              }
+          },
+          {
+          "@type": "Person",
+          "@id": "http://orcid.org/0000-0001-9661-0599",
+          "givenName": "Marco",
+          "familyName": "Giometto",
+          "affiliation": {
+              "@type": "Organization",
+              "name": "Department of Civil Engineering and Engineering Mechanics, Columbia University, New York, NY 10027"
+              }
+        }
+      ],
+      "publisher": {
+        "@type": "AGU",
+        "name": "AGU22"
+      },
+      "url": "https://agu.confex.com/agu/fm22/meetingapp.cgi/Paper/1150652",
+      "sameAs": "2022AGUFM.A42E..05S"
+    },
+    {"@id": "#event",
+      "@type": "Event",
+      "name": "#AGU22: Science Leads the Future",
+      "startDate": "2022-12-16",
+      "endDate": "2022-12-18",
+      "location": {
+        "@type": "Place",
+        "name": "Chicago, Illinois and Online Everywhere",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Chicago",
+          "addressRegion": "Illinois",
+          "addressCountry": "United States"
+    }
+    },
+      "eventDescription": "AGU Fall Meeting is the most influential event in the world dedicated to the advancement of Earth and space sciences. Every year, AGU Fall Meeting unites the Earth and space science community to share findings, connect like-minded scientists from around the world, and advance our profession and shared passion for the impact of science. AGU Fall Meeting 2022 will be held in Chicago and online everywhere 12 - 16 December 2022. More than 25,000 attendees from more than 100 countries will convene to explore how Science Leads the Future. We will welcome a diverse community of scientists, students, journalists, policymakers, educators and organizations who are working toward a world where scientific discovery leads to scientific solutions, and where our global collaborations and partnerships can carry us into a sustainable future. Visit the #AGU22 website for the latest updates and information.",
+      "url": "https://agu.confex.com/",
+      "about": "#preprint"
+    },
+    {"@id": "#peerreview",
+      "@type": "Review",
+      "reviewBody": "Summary or evaluation of the reviewed work",
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "4.5",
+        "bestRating": "5"
+      },
+      "itemReviewed": "#preprint",
+      "reviewer":  {
+        "@type": "Person",
+        "@id": "ORCHID",
+        "givenName": "NA",
+        "familyName": "NA",
+        "affiliation": {
+            "@type": "Organization",
+            "name": "ORGANIZATION"
+            }
+        }
+    }
+  ]
+}
