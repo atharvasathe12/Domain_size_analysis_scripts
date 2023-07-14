@@ -1,0 +1,60 @@
+{
+  "@context": "https://doi.org/10.5063/schema/codemeta-2.0",
+  "@type": "SoftwareSourceCode",
+  "license": "https://spdx.org/licenses/MIT",
+  "codeRepository": "https://github.com/atharvasathe12/Domain_size_analysis_scripts",
+  "dateCreated": "2023-07-05",
+  "datePublished": "2023-07-07",
+  "name": "Canopy Flow Domain Size Analysis",
+  "description": "All code and reproducibility specific artifacts used in publishing the code/data for the research article "Impact of the numerical domain on turbulent flow statistics: scalings and considerations for canopy flows" through the Journal of Fluid Mechanics",
+  "applicationCategory": "Fluid Mechanics",
+  "funding": "W911NF-22-1-0178",
+  "developmentStatus": "inactive",
+  "funder": [
+      {
+          "@type": "Organization",
+          "@id": "https://ror.org/05epdh915",
+          "name": "United States Army Research Office",
+          "url": "http://www.aro.army.mil/"
+      },
+      {
+          "@type": "Organization",
+          "@id": "https://ror.org/011hc8f90",
+          "name": "DEVCOM Army Research Laboratory",
+          "url": "http://www.arl.army.mil/"
+      }
+  ],
+"programmingLanguage": [
+      "Python 3"
+  ],
+  "runtimePlatform": [
+      "CPython"
+  ],
+  "operatingSystem": [
+      "macOS Ventura V13.2.1"
+  ],
+  "softwareRequirements": [
+      "Python 3.9.6, virtual environment configuration and requirements.txt file included in github repository"
+  ],
+  "author": [
+    {
+    "@type": "Person",
+    "givenName": "Atharva",
+    "familyName": "Sathe",
+    "affiliation": {
+        "@type": "Organization",
+        "name": "Department of Civil Engineering and Engineering Mechanics, Columbia University, New York, NY 10027"
+        }
+    },
+    {
+    "@type": "Person",
+    "@id": "http://orcid.org/0000-0001-9661-0599",
+    "givenName": "Marco",
+    "familyName": "Giometto",
+    "affiliation": {
+        "@type": "Organization",
+        "name": "Department of Civil Engineering and Engineering Mechanics, Columbia University, New York, NY 10027"
+        }
+    }
+]
+}

@@ -1,0 +1,131 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+
+  "@type": "Dataset",
+  "name": "Raw data from Impact of the numerical domain on turbulent flow statistics: scalings and considerations for canopy flows",
+  "description": "This dataset includes x TB of data including the pressure_corrected_domain_averages, longer_x_averages, high_reso_w, high_reso_new_stl_averages, and pi-based averages from x ",
+  "url": "nodes.desci.org/DATAREPOSITORY/RAW",
+  "isAccessibleForFree": true,
+  "keywords": [
+    "cross-stream aspect ratio", 
+    "streamwise aspect ratio", 
+    "scale separation",
+    "Large Eddy Simulations",
+    "urban boundary layer"
+  ],
+  "license": [
+    "https://spdx.org/licenses/MIT"
+  ],
+  "identifier": {
+    "@id": "https://beta.dpid.org/DPID",
+    "@type": "PropertyValue",
+    "propertyID": "https://beta.dpid.org",
+    "value": "DPID",
+    "url": "https://beta.dpid.org/DPID"
+  },
+  "citation": "Sathe, A. & Giometto, M. PUBLICATION YEAR Impact of the numerical domain on turbulent flow statistics: scalings and considerations for canopy flows. PUBLISHER, ISSUE#, PAGES.",
+  
+  "variableMeasured": [
+    {
+    "@type": "PropertyValue",
+    "name": "pressure_corrected_domain_averages",
+    "url": "https://www.nodes.desci.com/data/raw/pressure_corrected_domain_averages",
+    "propertyID": "http://sweetontology.net/phenFluidDynamics/VARIABLE",
+    "description": "Latitude where water samples were collected; north is positive.",
+    "unitText": "decimal degrees",
+    "minValue": "45.0",
+    "maxValue": "15.0"
+    }, 
+    {
+    "@type": "PropertyValue",
+    "name": "longerx_averages",
+    "url": "https://www.nodes.desci.com/data/raw/pressure_corrected_domain_averages",
+    "propertyID": "http://sweetontology.net/phenFluidDynamics/VARIABLE",
+    "description": "Latitude where water samples were collected; north is positive.",
+    "unitText": "decimal degrees",
+    "minValue": "45.0",
+    "maxValue": "15.0"
+    },
+    {
+    "@type": "PropertyValue",
+    "name": "high_reso_w",
+    "url": "https://www.nodes.desci.com/data/raw/pressure_corrected_domain_averages",
+    "propertyID": "http://sweetontology.net/phenFluidDynamics/VARIABLE",
+    "description": "Latitude where water samples were collected; north is positive.",
+    "unitText": "decimal degrees",
+    "minValue": "45.0",
+    "maxValue": "15.0"
+    }, 
+    {
+    "@type": "PropertyValue",
+    "name": "high_reso_new_stl_averages",
+    "url": "https://www.nodes.desci.com/data/raw/pressure_corrected_domain_averages",
+    "propertyID": "http://sweetontology.net/phenFluidDynamics/VARIABLE",
+    "description": "Latitude where water samples were collected; north is positive.",
+    "unitText": "decimal degrees",
+    "minValue": "45.0",
+    "maxValue": "15.0"
+    },
+    {
+    "@type": "PropertyValue",
+    "name": "pi-based_averages",
+    "url": "https://www.nodes.desci.com/data/raw/pressure_corrected_domain_averages",
+    "propertyID": "http://sweetontology.net/phenFluidDynamics/VARIABLE",
+    "description": "average turbulance in radians",
+    "unitText": "radians",
+    "minValue": "0",
+    "maxValue": "2pi"
+    }
+  ],
+  
+  "includedInDataCatalog": {
+    "@id": "https://beta.dpid.org/DATAIDENTIFIER",
+    "@type": "DataCatalog"
+  },
+
+  "distribution": {
+    "@type": "DataDownload",
+    "contentUrl": "https://www.sample-data-repository.org/dataset/472032.tsv",
+    "encodingFormat": "text/tab-separated-values"
+  },
+  
+  "creator": [
+    {
+        "@type": "Person",
+        "@id": "ATHARVA ORCHID",
+        "givenName": "Atharva",
+        "familyName": "Sathe",
+        "affiliation": {
+            "@type": "Organization",
+            "name": "Department of Civil Engineering and Engineering Mechanics, Columbia University, New York, NY 10027"
+            },
+        "roleName": "Principal Investigator"
+
+
+    },
+    {
+        "@type": "Person",
+        "@id": "http://orcid.org/0000-0001-9661-0599",
+        "givenName": "Marco",
+        "familyName": "Giometto",
+        "affiliation": {
+            "@type": "Organization",
+            "name": "Department of Civil Engineering and Engineering Mechanics, Columbia University, New York, NY 10027"
+            },
+        "roleName": "Co-Principal Investigator"
+
+    }
+  ],
+  "provider": {
+    "@id": "https://beta.dpid.org",
+    "@type": "Organization",
+    "legalName": "dPID",
+    "name": "dPID",
+    "url": "https://www.dpid.org/"
+  },
+  "publisher": {
+    "@id": "https://www.dpid.org/"
+  }
+}
