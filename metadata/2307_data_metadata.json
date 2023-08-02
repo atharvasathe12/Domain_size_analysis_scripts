@@ -1,12 +1,25 @@
 {
   "@context": {
-    "@vocab": "https://schema.org/"
+    "@base":"Root/",
+    "schema": "http://schema.org/",
+    "dataset": {
+      "@id": "Root",
+      "@type": "schema:Dataset"
+    },
+    "folder": {
+      "@id": "folder",
+      "@type": "schema:hasPart"
+    },
+    "fileType": "schema:FileType",
+    "dataMeaning": "schema:description",
+    "pdf": "schema:PDF",
+    "cbd": "schema:CBDFile",
+    "h5": "schema:H5File"
   },
 
-  "@type": "Dataset",
   "name": "Raw data from Impact of the numerical domain on turbulent flow statistics: scalings and considerations for canopy flows",
   "description": "This dataset includes x TB of data including the pressure_corrected_domain_averages, longer_x_averages, high_reso_w, high_reso_new_stl_averages, and pi-based averages from x ",
-  "url": "nodes.desci.org/DATAREPOSITORY/RAW",
+  "url": "bafybeiboxabu6gshap3zmnmqbygrcgahcmpulvdrisqinnwxagkso5562q",
   "isAccessibleForFree": true,
   "keywords": [
     "cross-stream aspect ratio", 
@@ -19,113 +32,151 @@
     "https://spdx.org/licenses/MIT"
   ],
   "identifier": {
-    "@id": "https://beta.dpid.org/DPID",
+    "@id": "dPID",
     "@type": "PropertyValue",
     "propertyID": "https://beta.dpid.org",
     "value": "DPID",
-    "url": "https://beta.dpid.org/DPID"
+    "url": "bafybeifeq5trfwof6wfax4tlmroo7xhscpkqntp6upim7wbgywysmzdube"
   },
   "citation": "Sathe, A. & Giometto, M. PUBLICATION YEAR Impact of the numerical domain on turbulent flow statistics: scalings and considerations for canopy flows. PUBLISHER, ISSUE#, PAGES.",
+ 
+  "@id": "Root",
+  "@type": "schema:Dataset",
   
-  "variableMeasured": [
+  "folder": [
     {
-    "@type": "PropertyValue",
-    "name": "pressure_corrected_domain_averages",
-    "url": "https://www.nodes.desci.com/data/raw/pressure_corrected_domain_averages",
-    "propertyID": "http://sweetontology.net/phenFluidDynamics/VARIABLE",
-    "description": "Latitude where water samples were collected; north is positive.",
-    "unitText": "decimal degrees",
-    "minValue": "45.0",
-    "maxValue": "15.0"
-    }, 
-    {
-    "@type": "PropertyValue",
-    "name": "longerx_averages",
-    "url": "https://www.nodes.desci.com/data/raw/pressure_corrected_domain_averages",
-    "propertyID": "http://sweetontology.net/phenFluidDynamics/VARIABLE",
-    "description": "Latitude where water samples were collected; north is positive.",
-    "unitText": "decimal degrees",
-    "minValue": "45.0",
-    "maxValue": "15.0"
-    },
-    {
-    "@type": "PropertyValue",
-    "name": "high_reso_w",
-    "url": "https://www.nodes.desci.com/data/raw/pressure_corrected_domain_averages",
-    "propertyID": "http://sweetontology.net/phenFluidDynamics/VARIABLE",
-    "description": "Latitude where water samples were collected; north is positive.",
-    "unitText": "decimal degrees",
-    "minValue": "45.0",
-    "maxValue": "15.0"
-    }, 
-    {
-    "@type": "PropertyValue",
-    "name": "high_reso_new_stl_averages",
-    "url": "https://www.nodes.desci.com/data/raw/pressure_corrected_domain_averages",
-    "propertyID": "http://sweetontology.net/phenFluidDynamics/VARIABLE",
-    "description": "Latitude where water samples were collected; north is positive.",
-    "unitText": "decimal degrees",
-    "minValue": "45.0",
-    "maxValue": "15.0"
-    },
-    {
-    "@type": "PropertyValue",
-    "name": "pi-based_averages",
-    "url": "https://www.nodes.desci.com/data/raw/pressure_corrected_domain_averages",
-    "propertyID": "http://sweetontology.net/phenFluidDynamics/VARIABLE",
-    "description": "average turbulance in radians",
-    "unitText": "radians",
-    "minValue": "0",
-    "maxValue": "2pi"
-    }
-  ],
-  
-  "includedInDataCatalog": {
-    "@id": "https://beta.dpid.org/DATAIDENTIFIER",
-    "@type": "DataCatalog"
-  },
-
-  "distribution": {
-    "@type": "DataDownload",
-    "contentUrl": "https://www.sample-data-repository.org/dataset/472032.tsv",
-    "encodingFormat": "text/tab-separated-values"
-  },
-  
-  "creator": [
-    {
-        "@type": "Person",
-        "@id": "ATHARVA ORCHID",
-        "givenName": "Atharva",
-        "familyName": "Sathe",
-        "affiliation": {
-            "@type": "Organization",
-            "name": "Department of Civil Engineering and Engineering Mechanics, Columbia University, New York, NY 10027"
+      "@id": "Raw/FileStructure",
+      "folder": [
+        {
+          "@id": "non-highreso",
+          "fileType": [
+            {
+              "@id": "input",
+              "dataMeaning": "INPUT: TBD - unsure the input filetype"
             },
-        "roleName": "Principal Investigator"
-
-
+            {
+              "@id": "cbd",
+              "dataMeaning": "OUTPUT: This is the output of the RAW data analysis in .cbd files"
+            },
+            {
+              "@id": "executables",
+              "dataMeaning": "EXECUTABLES: TBD - unsure the executable file type"
+            }
+          ]
+        }
+      ]
     },
     {
-        "@type": "Person",
-        "@id": "http://orcid.org/0000-0001-9661-0599",
-        "givenName": "Marco",
-        "familyName": "Giometto",
-        "affiliation": {
-            "@type": "Organization",
-            "name": "Department of Civil Engineering and Engineering Mechanics, Columbia University, New York, NY 10027"
-            },
-        "roleName": "Co-Principal Investigator"
+      "@id": "Processed/FileStructure",
+      "url": "bafybeiffjcbhthcq6hsgp54lqgq7tex5bj3thzeeoolhcc27jtmnhn6jea",
+      "folder": [
+        {
+          "@id": ".h5",
+          "fileType": [
+            {
+              "@id": "h5",
+              "dataMeaning": "This is the processed h5 outputs"
 
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "@id": "Results/FileStructure",
+      "folder": [
+        {
+          "@id": "pdfs",
+          "fileType": [
+            {
+              "@id": "pdf",
+              "dataMeaning": "These are the results"
+
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "@id": "Raw/pressure_corrected_domain_averages",
+      "@type": "schema:DataCatalog",
+      "folder": "Raw/FileStructure",
+      "url":
+    },
+    {
+      "@id": "Raw/longerx_averages",
+      "@type": "schema:DataCatalog",
+      "folder": "Raw/FileStructure",
+      "url":
+    },
+    {
+      "@id": "Raw/high_reso_w",
+      "@type": "schema:DataCatalog",
+      "folder": "Raw/FileStructure",
+      "url":
+    },
+    {
+      "@id": "Raw/high_reso_new_stl_averages",
+      "@type": "schema:DataCatalog",
+      "folder": "Raw/FileStructure",
+      "url":
+    },
+    {
+      "@id": "Raw/pi-based_averages",
+      "@type": "schema:DataCatalog",
+      "folder": "Raw/FileStructure",
+      "url":
+    },
+    {
+      "@id": "Processed/pressure_corrected_domain_averages",
+      "@type": "schema:DataCatalog",
+      "folder": "Processed/FileStructure",
+      "url": "bafybeia77c423jq6ej3advkk4svialbqikaynv6bqwlsjea76bxmfl2amq"
+    },
+    {
+      "@id": "Processed/longerx_averages",
+      "@type": "schema:DataCatalog",
+      "folder": "Processed/FileStructure",
+      "url":"bafybeicii37l2pgmxi2zzxybzf7tvpahbw4xpa24fyze2r6pex5s6gkeoi"
+    },
+    {
+      "@id": "Processed/high_reso_w",
+      "@type": "schema:DataCatalog",
+      "folder": "Processed/FileStructure",
+      "url": "bafybeiec3swoarjik7l7elrw2kvh64eoilhu6fjj3ehditmqfxxakn2kly"
+    },
+    {
+      "@id": "Processed/high_reso_new_stl_averages",
+      "@type": "schema:DataCatalog",
+      "folder": "Processed/FileStructure",
+      "url":"bafybeifrm3iqmuesf6utcuki35xf4bk73kl6mc3ygaxk6eicen2ocb43pi"
+    },
+    {
+      "@id": "Processed/pi-based_averages",
+      "@type": "schema:DataCatalog",
+      "folder": "Processed/FileStructure",
+      "url":"bafybeibg6mft3i7jxj4v5ok36dxrp4plypmithxbkyk7ypdakoittklmbu"
+    },
+    {
+      "@id": "Processed/grid_repo_analysis",
+      "@type": "schema:DataCatalog",
+      "folder": "Processed/FileStructure",
+      "url":"bafkreihdwdcefgh4dqkjv67uzcmw7ojee6xedzdetojuzjevtenxquvyku"
+    },
+    {
+      "@id": "Processed/test",
+      "@type": "schema:DataCatalog",
+      "folder": "Processed/FileStructure",
+      "url":"bafybeickndpy77rolc365z5lngvcg2enx7ihrwroshn4bgntr23otdmlgm"
+    },
+    {
+      "@id": "Results/results",
+      "@type": "schema:DataCatalog",
+      "folder": "Results/FileStructure",
+      "url":
     }
-  ],
-  "provider": {
-    "@id": "https://beta.dpid.org",
-    "@type": "Organization",
-    "legalName": "dPID",
-    "name": "dPID",
-    "url": "https://www.dpid.org/"
-  },
-  "publisher": {
-    "@id": "https://www.dpid.org/"
-  }
+  ]
 }
+
+
+
